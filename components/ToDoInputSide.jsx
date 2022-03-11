@@ -39,7 +39,7 @@ const ToDoInputSide = ({ toDos, addToDoItem, selectedTodo, updateToDo }) => {
           className="h-5/6 flex flex-col justify-center space-y-4"
         >
           <h2 className="md:text-3xl text-2xl text-white font-semibold">
-            What's on your mind buddy ?
+            What is on your mind buddy ?
           </h2>
           <input
             type="text"

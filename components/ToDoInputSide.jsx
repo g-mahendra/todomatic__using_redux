@@ -52,7 +52,7 @@ const ToDoInputSide = ({ toDos, addToDoItem, selectedTodo, updateToDo }) => {
             type="submit"
             className="md:w-1/5 w-1/2 bg-green-400 hover:bg-green-600 p-2 rounded"
           >
-            {selectedTodo ? "Save" : "Add Item"}
+            {selectedTodo ? `Save` : `Add Item`}
           </button>
         </form>
       </div>

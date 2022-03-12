@@ -4,6 +4,8 @@ import {
   DELETE_TODO,
   SELECT_TODO,
   UPDATE_TODO,
+  MARK_ALL_AS_DONE,
+  DELETE_ALL_COMPLETED,
 } from "../types";
 
 const addToDoItem = (task) => {
@@ -44,4 +46,24 @@ const updateToDo = (content, id) => {
   };
 };
 
-export { addToDoItem, toggleToDoCompleteState, deleteTodo, selectToDo, updateToDo };
+const markAllToDosAsDone = () => {
+  return {
+    type: MARK_ALL_AS_DONE,
+  };
+};
+
+const deleteAllCompletedToDos = () => {
+  return {
+    type: DELETE_ALL_COMPLETED,
+  };
+};
+
+export {
+  addToDoItem,
+  toggleToDoCompleteState,
+  deleteTodo,
+  selectToDo,
+  updateToDo,
+  markAllToDosAsDone,
+  deleteAllCompletedToDos,
+};

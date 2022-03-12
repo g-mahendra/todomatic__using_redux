@@ -102,7 +102,7 @@ const ToDoListSide = ({
 
 const mapStateToProps = (state) => {
   return {
-    allToDos: state.toDos.todos,
+    allToDos: state.toDos.todos
   };
 };
 
